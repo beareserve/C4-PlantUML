@@ -1,10 +1,12 @@
 @startuml
 ' convert it with additional command line argument -DRELATIVE_INCLUDE="." to use locally
-!if %variable_exists("RELATIVE_INCLUDE")
+'!if %variable_exists("RELATIVE_INCLUDE")
+'  !include ./../C4_Dynamic.puml
+'!else
+'  !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Dynamic.puml
+'!endif
   !include ./../C4_Dynamic.puml
-!else
-  !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Dynamic.puml
-!endif
+
 
 LAYOUT_WITH_LEGEND()
 

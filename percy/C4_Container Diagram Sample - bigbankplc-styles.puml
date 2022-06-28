@@ -1,10 +1,11 @@
 @startuml
 ' convert it with additional command line argument -DRELATIVE_INCLUDE="." to use locally
-!if %variable_exists("RELATIVE_INCLUDE")
+'!if %variable_exists("RELATIVE_INCLUDE")
+'  !include ./../C4_Container.puml
+'!else
+'  !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+'!endif
   !include ./../C4_Container.puml
-!else
-  !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
-!endif
 
 SHOW_PERSON_OUTLINE()
 ' Tags support no spaces in the name (based on the underlining stereotypes, which don't support spaces anymore). 
